@@ -1,0 +1,23 @@
+{
+  "name": "@mcp-originals/salesforce-commerce-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "mcpfusion dev",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "deploy": "mcpfusion deploy"
+  },
+  "dependencies": {
+    "@mcpfusion/core": "^4.3.0",
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "esbuild": "^0.24.2",
+    "tsx": "^4.22.4",
+    "typescript": "^5.7.2"
+  },
+  "description": "salesforce-commerce-mcp MCP Server"
+}

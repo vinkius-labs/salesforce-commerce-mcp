@@ -1,0 +1,307 @@
+{
+  "capabilities": {
+    "tools": {
+      "sf_list_pricebooks": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:fd25ab59e5739325a2f8af91d68c761ea46560f97829e151379a1dafb2396763",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Retrieves Pricebook2 records. Returns price book name, description, active status, and IsStandard flag. Every Salesforce org has a Standard Price Book. Additional price books allow different pricing for channels, regions, or customer tiers (e.g., \"Partner Pricing\", \"Enterprise Discount\"). Use to find price book IDs before viewing entries.\n\nList all price books in Salesforce with name, description, active status, and whether it is the standard price book.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Retrieves Pricebook2 records. Returns price book name, description, active status, and IsStandard flag. Every Salesforce org has a Standard Price Book. Additional price books allow different pricing for channels, regions, or customer tiers (e.g., \"Partner Pricing\", \"Enterprise Discount\"). Use to find price book IDs before viewing entries.\n\nList all price books in Salesforce with name, description, active status, and whether it is the standard price book.",
+          "inputSchemaDigest": "sha256:f53fe4ee1023ea8ff90cc41708cfc2a00f0915f789c02e9c25946c714470987a",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_order_items": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:3901b0f3ba081e316e916a469969e48dc1c811d0b5580248dd46fd17b16772e6",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Retrieves OrderItem records for a specific order. Returns product name, quantity, unit price, total price, and description per line item. Use when the user asks \"what is in this order?\", needs to review order composition, or wants to verify pricing before activation.\n\nGet all line items of a specific Salesforce order — products, quantities, unit prices, and total prices per item.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Retrieves OrderItem records for a specific order. Returns product name, quantity, unit price, total price, and description per line item. Use when the user asks \"what is in this order?\", needs to review order composition, or wants to verify pricing before activation.\n\nGet all line items of a specific Salesforce order — products, quantities, unit prices, and total prices per item.. Requires: orderId",
+          "inputSchemaDigest": "sha256:554189c6c74d3dc3d4546cea4256d069b2cde055a22cae6a9f7afdbab4c4ecaa",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_orders_by_status": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:b3e956d137cf247287b3ed85dcbc0e3637d17c0313fc338c2badf18e5dc187aa",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Filters Order records by Status field, sorted by total amount descending. Use for order management: \"how many draft orders need activation?\", \"show all activated orders\", or for revenue analysis by order status.\n\nGet Salesforce orders filtered by status (Draft or Activated) for order management and fulfillment tracking.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Filters Order records by Status field, sorted by total amount descending. Use for order management: \"how many draft orders need activation?\", \"show all activated orders\", or for revenue analysis by order status.\n\nGet Salesforce orders filtered by status (Draft or Activated) for order management and fulfillment tracking.. Requires: status",
+          "inputSchemaDigest": "sha256:7a8e3286450ebf614c44fd7f446232d9b7ef33bac6f3d9bbb4d1af04d2694f91",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_pricebook_entries": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:60d05f9871d3b5349c44d91a43ae56b667993aeb1f7218be5d9ea6d7dbc12797",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Retrieves PricebookEntry records for a specific price book. Returns product name, product code, unit price, currency, and active status. Price book entries define the actual price of a product in a specific context (channel, region, tier). Use to check pricing, compare across price books, or verify product availability in a specific price book.\n\nGet all product price entries within a specific price book — products with their unit prices and active status.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Retrieves PricebookEntry records for a specific price book. Returns product name, product code, unit price, currency, and active status. Price book entries define the actual price of a product in a specific context (channel, region, tier). Use to check pricing, compare across price books, or verify product availability in a specific price book.\n\nGet all product price entries within a specific price book — products with their unit prices and active status.. Requires: pricebookId",
+          "inputSchemaDigest": "sha256:bfc02bb92ad70189e82c4b496438232243c2f5dfd6fa32b00485fdee6579563f",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_products_by_family": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:c08bf843caaab5635310612f9772d6a043a22ad43f05e4ffee11a277619c9af2",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Filters active Product2 records by the Family field. Returns products within a category (e.g., \"Hardware\", \"Software\", \"Services\"). Use when the user asks about products in a specific category, wants a category-level view, or needs to browse the catalog by family.\n\nGet all active products within a specific product family for category-level catalog browsing.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Filters active Product2 records by the Family field. Returns products within a category (e.g., \"Hardware\", \"Software\", \"Services\"). Use when the user asks about products in a specific category, wants a category-level view, or needs to browse the catalog by family.\n\nGet all active products within a specific product family for category-level catalog browsing.. Requires: family",
+          "inputSchemaDigest": "sha256:74d20597a4905a7a35cb5bc3e3a456fc36ca32a31382daf9e956efed259f5866",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_search_orders": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:954636b656ab462b72952a2625e5ad5fdd844943e5d5303ed644c52be456f1c0",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Queries Order sObjects. Returns order number, account name, status (Draft/Activated), total amount, effective date, and order owner. Orders represent confirmed customer transactions. Use when the user asks about customer orders, wants to look up a specific order number, or needs to review order history.\n\nSearch Salesforce orders by order number or account name to find transactions with status, total, and dates.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Queries Order sObjects. Returns order number, account name, status (Draft/Activated), total amount, effective date, and order owner. Orders represent confirmed customer transactions. Use when the user asks about customer orders, wants to look up a specific order number, or needs to review order history.\n\nSearch Salesforce orders by order number or account name to find transactions with status, total, and dates.. Requires: query",
+          "inputSchemaDigest": "sha256:1c49838cbae5833f4a1890ad956cbc91260826b1996260e5cd37a431d0610824",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_search_products": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:da207f771efa846c4f318e340ce340f2f86bc9b20648202a7aa3ea55017b84aa",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Queries Product2 sObjects via SOSL. Returns product name, product code (SKU), product family, description, and whether the product is active. Products define what can be sold — they are linked to price books for pricing. Use when the user asks about product catalog, wants to find a specific product, or needs product IDs for orders.\n\nSearch the Salesforce product catalog by name or product code to find items with family, description, and active status.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Queries Product2 sObjects via SOSL. Returns product name, product code (SKU), product family, description, and whether the product is active. Products define what can be sold — they are linked to price books for pricing. Use when the user asks about product catalog, wants to find a specific product, or needs product IDs for orders.\n\nSearch the Salesforce product catalog by name or product code to find items with family, description, and active status.. Requires: query",
+          "inputSchemaDigest": "sha256:1310157b91e8f576e64c79dcff970d32a2d8c9ec0ddd1d86ba47ed9d7d0690cf",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_update_product": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [
+            "default"
+          ],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:b0b38623abc4c9e4222292d827597b851b82ff2de36eab7b650e8169c720129c",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Patches a Product2 sObject. Common operations: set IsActive to false to discontinue a product, change Family to reclassify, update Description, or rename. Only specified fields change.\n\nUpdate a product in the Salesforce catalog — change name, description, active status, product code, or family.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Patches a Product2 sObject. Common operations: set IsActive to false to discontinue a product, change Family to reclassify, update Description, or rename. Only specified fields change.\n\nUpdate a product in the Salesforce catalog — change name, description, active status, product code, or family.. Requires: id [DESTRUCTIVE]",
+          "inputSchemaDigest": "sha256:98050cb7063a19b51fb692bbcb3c72566078b088e6c55aca2f7a9f6e0ef500b0",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      }
+    }
+  },
+  "generatedAt": "2026-06-20T06:35:24.573Z",
+  "integrityDigest": "sha256:4350dfd9f33bc6786fa4c49ebd025b65bde35cddda1eadb5a1de6f0ddca36213",
+  "lockfileVersion": 1,
+  "mcpfusionVersion": "4.3.0",
+  "serverName": "mcpfusion-server"
+}
