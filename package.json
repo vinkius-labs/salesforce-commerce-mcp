@@ -1,5 +1,5 @@
 {
-  "name": "@mcp-originals/salesforce-commerce-mcp",
+  "name": "@mcp-listing/salesforce-commerce-mcp",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/server.js",
@@ -19,5 +19,21 @@
     "tsx": "^4.22.4",
     "typescript": "^5.7.2"
   },
-  "description": "salesforce-commerce-mcp MCP Server"
+  "description": "Salesforce Commerce Cloud integration for the Model Context Protocol (MCP). Autonomous AI access to products, catalogs, and orders.",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "salesforce",
+    "salesforce-commerce-cloud",
+    "crm",
+    "ecommerce",
+    "ai-agents",
+    "vinkius"
+  ],
+  "homepage": "https://vinkius.com/mcp/salesforce-commerce-cloud",
+  "author": "Vinkius",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinkius-labs/salesforce-commerce-mcp.git"
+  }
 }

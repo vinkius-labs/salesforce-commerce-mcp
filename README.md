@@ -1,6 +1,7 @@
 # 🛍️ Salesforce Commerce Cloud Agentic MCP
 
-[![Vinkius Edge Deployment](https://img.shields.io/badge/Deploy%20on-Vinkius%20Cloud-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce-commerce-cloud)
+[![Vinkius Edge Deployment](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce-commerce-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesforce-commerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesforce-commerce-mcp)
 
 The official Model Context Protocol adapter for Salesforce Commerce Cloud (B2C). Empower your AI agents to seamlessly navigate headless storefronts, manage e-commerce orders, and interact with complex SCAPI/OCAPI endpoints natively.
 
@@ -10,7 +11,7 @@ Modern storefronts are incredibly complex. This MCP server abstract away the int
 
 ### Enterprise Edge Hosting by Vinkius
 
-This server is highly optimized for the **Vinkius Cloud** ecosystem. Hosting your AI tools on Vinkius offers distinct competitive advantages for e-commerce operations:
+This server is highly optimized for the **Vinkius Edge** ecosystem. Hosting your AI tools on Vinkius offers distinct competitive advantages for e-commerce operations:
 - **Unmatched Speed**: E-commerce AI demands fast catalog responses. Vinkius Edge isolates ensure your MCP runs globally, right next to your users, delivering sub-millisecond execution.
 - **Vinkius Marketplace Integration**: Easily share or monetize your custom storefront agents through the Vinkius ecosystem.
 - **Battle-tested Security**: E-commerce data is highly sensitive. The Vinkius runtime isolates your API tokens away from the LLM context window.
